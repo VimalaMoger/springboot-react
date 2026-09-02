@@ -1,0 +1,7 @@
+package ecom.e_store.dto;
+
+import java.math.BigDecimal;
+
+public record OrderItemResponseDto(String productName, Integer quantity,
+                                  BigDecimal price, String imageUrl) {
+}

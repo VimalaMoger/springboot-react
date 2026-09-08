@@ -1,17 +1,17 @@
 
 Eazy Stickers - E-store application 
 
-Spring Boot: 
-- Global Exception handlers
-- API documentation
-- Back end validations
-- Spring data JPA Auditing(who did what and when)
-- Logging
+Spring Boot: Created back end application using..
+- Global Exception handlers to centralize error handling logic across all controllers with proper error response.
+- Set up API documentation for the HTTP endpoints
+- Back end validations to enforce data constraints via annotations
+- Spring data JPA Auditing(Who did what and when)
+- Logging to file and console with proper format
 - In-memory H2 DB: Setup, initialization, store DB data using file
-- Spring Data JPA
-- Entity classes and Lombok library
-- Fixing CORS error
-- Health Checks and metrics using Spring actuator
+- Spring Data JPA for interaction with MySQL database access
+- Entity classes - POJO classes for tables in DB and Lombok library
+- Fixing CORS error - Configured backend to accept requests from frontend origin
+- Health Checks and metrics using Spring actuator and configure and customize access to different groups
 
 REST API:
 - Contact: GET, POST - Contact support team

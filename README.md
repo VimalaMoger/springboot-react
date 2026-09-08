@@ -1,17 +1,20 @@
 
 Eazy Stickers - E-store application 
 
-Spring Boot: Created backend application using..
-- Set up Global Exception to centralize error handling logic across all controllers with proper error response.
+Spring Boot: Created backend application using MySQL
+- Set up Global Exception to centralize error handling logic across all controllers
+  - with structured error response.
 - Set up API documentation for the HTTP endpoints
 - Back end validations to enforce data constraints via annotations
 - Spring data JPA Auditing(Who did what and when)
-- Logging to file and console with proper format
-- In-memory H2 DB: Setup, initialization, store DB data using file
+- Logs to file and console with proper format
+- Initial set up with In-memory H2 DB:
+  - Setup, initialization, store DB data using file
 - Spring Data JPA for interaction with MySQL database access
 - Entity classes - POJO classes for tables in DB and Lombok library
-- Fixing CORS error - Configured backend to accept requests from frontend origin
-- Health Checks and metrics using Spring actuator, configure and customize access to different groups
+- Fix CORS error - Configured backend to accept requests from frontend origin
+- Health Checks and metrics using Spring actuator
+  - configure and customize access to different groups
 
 REST API:
 - Contact: GET, POST - Contacting support team and success response
@@ -22,7 +25,7 @@ REST API:
 - Csrf Token: GET
 - Product: GET - Read all product data
 - Profile: GET, PUT - Read profile data and update profile data
-- Mapping HTTP request body to Java Object, Query and Path parameters, HTTP headers, Request and response Entity
+  - Mapping HTTP request body to Java Object, Query and Path parameters, HTTP headers, Request and response Entity
 
 Spring Security:
 - Static user set up credentials

@@ -67,7 +67,7 @@ Enhancements:
 - Custom Authentication provider for Login operation
 
 Migrating from H2 DB to MySQL DB
-Set up MySQL DB
+- Set up MySQL DB
 
 Dependencies:
 Java 25

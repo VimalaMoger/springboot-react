@@ -42,6 +42,7 @@ Spring Security:
 
 Spring Data JPA:
 - Spring Data JPA relationships using @OneToOne, @ManyToOne and @OneToMany
+- Derived query method
 - Custom @Query with JPQL, @NamedQuery and @NamedNativeQuery, @Transactional
 - Reading properties using @Value, Environment, @ConfigurationProperties, @PropertySource
 - Method execution to perform initialization after dependency injection @PostConstruct
@@ -59,7 +60,8 @@ Tables:
 - Orders table for orders, OrderItem for order details
 
 Enhancements:
-- Derived query method
+- Custom Queries
+- Transparent Auditing - Entity timestamps and tracking metadata(@CreatedDate/By, @LastModifiedBy/Date)
 - Stopping duplicate customers during registration from custom query
 - Stopping end users from using weak passwords with CompromisedPasswordChecker
 - Custom Authentication provider for Login operation

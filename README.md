@@ -69,8 +69,9 @@ Enhancements:
 Migrating from H2 DB to MySQL DB
 - Set up MySQL DB
 
+[App to view](https://lighthearted-stroopwafel-c66603.netlify.app/)
+
 Dependencies:
-Java 25
 ```
 Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev tools, Spring boot starter actuator, Spring boot starter validation, Spring boot starter security,
 Jjwt jackson, Jjwt impl, springdoc openapi starter webmvc ui, spring boot starter cashe, Caffeine, MySQL connector j

@@ -68,6 +68,8 @@ Spring Cashing with TTL configuration(Time-To-Live)
 ***Migrating from H2 DB to MySQL DB***
 - Set up MySQL DB
 
+***Build and deployment to AWS cloud***
+
 [App to view](https://lighthearted-stroopwafel-c66603.netlify.app/)
 
 ***Dependencies***:

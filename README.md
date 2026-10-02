@@ -10,30 +10,100 @@ Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev t
 ```
 
 ## Spring Boot: 
+
+- Initial set up with In-memory H2 DB:
+  - Setup, initialization, store DB data in a file
+- Entity classes - POJO classes for tables in DB
 - Set up Global Exception to centralize error handling logic across all controllers
   - with structured error response.
+- Develop RESTful services for front end
 - Set up API documentation for the HTTP endpoints
-- Back end validations to enforce data constraints via annotations
-- Spring data JPA Auditing(Who did what and when)
-- Logs to file and console with proper format
-- Initial set up with In-memory H2 DB:
-  - Setup, initialization, store DB data using file
-- Spring Data JPA for interaction with MySQL database access
-- Entity classes - POJO classes for tables in DB and Lombok library
-- Fix CORS error - Configured backend to accept requests from frontend origin
+- Validation check- Back end validations to enforce data constraints via annotations
+- Spring data JPA Auditing - (Who did what and when)
+- Logs to file / console with proper format
+- Fix CORS error - Configure backend to accept requests from frontend origin
 - Health Checks and metrics using Spring actuator
   - configure and customize access to different groups
+- Spring Data JPA for interaction with MySQL database access
 
-### REST API:
-- Contact: GET, POST - Contacting support team and success response
-- Login, Register: POST - Saving new customer details, and login success
-- Admin: GET, PATCH - Building admin order request endpoint
-- Orders: GET, POST - Saving Orders, get customer orders
-- Payment: POST - Building create-payment-intent
-- Csrf Token: GET
-- Product: GET - Read all product data
-- Profile: GET, PUT - Read profile data and update profile data
-  - Mapping HTTP request body to Java Object, Query and Path parameters, HTTP headers, Request and response Entity
+## Project Structure
+```bash
+       
+        │── src/e-store                                  
+                ├── config
+                    ├── AuditAwareImpl
+                    ├── CaffeineCacheManager
+                    ├── StripeConfig
+                ├── constants
+                    ├── ApplicationConstants
+                |── controller
+                    ├── AdminController
+                    ├── AuthController
+                    ├── ContactRequestController
+                    ├── CreatePaymentIntent
+                    ├── CsrfController
+                    ├── OrderController
+                    ├── ProductController
+                    ├── ProfileController                                
+                ├── dto
+                    ├── AddressDto
+                    ├── ContactDetailsDto
+                    ├── ContactRequestDto
+                    ├── ContactResponseDto
+                    ├── ErrorResponse
+                    ├── LoginRequestDto
+                    ├── LoginResponseDto
+                    ├── OrderItemDto
+                    ├── OrderItemResponseDto
+                    ├── OrderRequestDto
+                    ├── OrderResponseDto
+                    ├── PaymentRequestDto
+                    ├── PaymentResponseDto
+                    ├── ProductDto
+                    ├── ProfileRequestDto
+                    ├── ProfileResponseDto
+                    ├── RegisterUserRequestDto
+                    ├── ResponseDto
+                    ├── UserDto
+                │── entity
+                    ├── Address
+                    ├── BaseEntity
+                    ├── Contact
+                    ├── Customer
+                    ├── Order
+                    ├── OrderItem
+                    ├── Product
+                    ├── Role
+                ├── exception
+                    ├── GlobalExceptionHandler
+                    ├── ResourceNotFoundException
+                │── repository
+                    ├── ContactRequestRepository
+                    ├── CustomerRepository
+                    ├── OrderRepository
+                    ├── ProductRepository
+                    ├── RoleRepository
+                │── security
+                    ├── JWTTokenValidatorFilter
+                    ├── LoginAuthenticationProvider
+                    ├── PublicPathConfig
+                    ├── SecurityConfig
+                ├── service
+                    ├── ContactRequestService
+                    ├── OrderService
+                    ├── PaymentService
+                    ├── ProductService
+                    ├── ProfileService
+                ├── serviceImpl
+                    ├── ContactRequestServiceImpl
+                    ├── OrderServiceImpl
+                    ├── PaymentServiceImpl
+                    ├── ProductServiceImpl
+                    ├── ProfileServiceImpl
+                ├── util
+                    ├── JwtUtil                                
+         ├── pom.xml
+```
 
 ### Spring Security:
 - Static user set up credentials
@@ -60,12 +130,6 @@ Profiles, Conditional Bean creation
 
 Cashing for performance @Casheable
 Spring Cashing with TTL configuration(Time-To-Live)
-
-### Tables:
-- Customer to store end users details
-- Role, Contact, Product, BaseEntity
-- New Address table to store customer address
-- Orders table for orders, OrderItem for order details
 
 ### Enhancements:
 - Custom Queries

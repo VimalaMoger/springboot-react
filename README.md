@@ -1,6 +1,15 @@
-## Eazy Stickers - E-store application
+# E-store application
 
-Spring Boot: Created backend application using MySQL
+**Initial set up**
+
+Generated Spring Boot application using start.spring.io
+
+***Dependencies added in pom.xml***:
+```
+Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev tools, Spring boot starter actuator, Spring boot starter validation, Spring boot starter security, Jjwt jackson, Jjwt impl, springdoc openapi starter webmvc ui, spring boot starter cashe, Caffeine, MySQL connector j
+```
+
+## Spring Boot: 
 - Set up Global Exception to centralize error handling logic across all controllers
   - with structured error response.
 - Set up API documentation for the HTTP endpoints
@@ -73,9 +82,3 @@ Spring Cashing with TTL configuration(Time-To-Live)
 [App to view](https://lighthearted-stroopwafel-c66603.netlify.app/)
 
 ```test card 4242 4242 4242 4242```
-
-***Dependencies***:
-```
-Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev tools, Spring boot starter actuator, Spring boot starter validation, Spring boot starter security,
-Jjwt jackson, Jjwt impl, springdoc openapi starter webmvc ui, spring boot starter cashe, Caffeine, MySQL connector j
-```

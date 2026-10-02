@@ -2,29 +2,12 @@
 
 **Initial set up**
 
-Generated Spring Boot application using start.spring.io
+Generated Spring Boot Web project using [Spring Initializer](https://start.spring.io/index.html)
 
-***Dependencies added in pom.xml***:
+***Dependencies in pom.xml***:
 ```
 Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev tools, Spring boot starter actuator, Spring boot starter validation, Spring boot starter security, Jjwt jackson, Jjwt impl, springdoc openapi starter webmvc ui, spring boot starter cashe, Caffeine, MySQL connector j
 ```
-
-## Spring Boot: 
-
-- Initial set up with In-memory H2 DB:
-  - Setup, initialization, store DB data in a file
-- Entity classes - POJO classes for tables in DB
-- Set up Global Exception to centralize error handling logic across all controllers
-  - with structured error response.
-- Develop RESTful services for front end
-- Set up API documentation for the HTTP endpoints
-- Validation check- Back end validations to enforce data constraints via annotations
-- Spring data JPA Auditing - (Who did what and when)
-- Logs to file / console with proper format
-- Fix CORS error - Configure backend to accept requests from frontend origin
-- Health Checks and metrics using Spring actuator
-  - configure and customize access to different groups
-- Spring Data JPA for interaction with MySQL database access
 
 ## Project Structure
 ```bash
@@ -105,7 +88,25 @@ Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev t
          ├── pom.xml
 ```
 
-### Spring Security:
+## Spring Boot Set up: 
+
+- Initial set up with In-memory H2 DB:
+  - Setup, initialization, store DB data in a file
+- Entity classes - POJO classes for tables in DB
+- Set up Global Exception to centralize error handling logic across all controllers
+  - with structured error response.
+- Develop RESTful services for front end
+- Set up API documentation for the HTTP endpoints
+- Validation check- Back end validations to enforce data constraints via annotations
+- Spring data JPA Auditing - (Who did what and when)
+- Logs to file / console with proper format
+- Fix CORS error - Configure backend to accept requests from frontend origin
+- Health Checks and metrics using Spring actuator
+  - configure and customize access to different groups
+- Spring Data JPA for interaction with MySQL database access
+
+## Spring Security:
+
 - Static user set up credentials
 - Security config code per custom requirements
 - Creating user with in-memoryUseDetailManager
@@ -118,27 +119,28 @@ Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev t
 - CSRF protection and token implementation
 - Securing Actuator and Swagger paths using correct role configurations
 
-### Spring Data JPA:
+## Spring Data JPA:
+
 - Spring Data JPA relationships using @OneToOne, @ManyToOne and @OneToMany
 - Derived query method
 - Custom @Query with JPQL, @NamedQuery and @NamedNativeQuery, @Transactional
-- Reading properties using @Value, Environment, @ConfigurationProperties, @PropertySource
+- Reading properties via @Value, Environment, @ConfigurationProperties, @PropertySource
 - Method execution to perform initialization after dependency injection @PostConstruct
 - Stereotype and Bean annotation(scope, custom name, @Primary, @Qualifier), Autowiring
 
-Profiles, Conditional Bean creation
-
-Cashing for performance @Casheable
-Spring Cashing with TTL configuration(Time-To-Live)
-
 ### Enhancements:
+
 - Custom Queries
 - Transparent Auditing - Entity timestamps and tracking metadata(@CreatedDate/By, @LastModifiedBy/Date)
 - Stopping duplicate customers during registration from custom query
 - Stopping end users from using weak passwords with CompromisedPasswordChecker
 - Custom Authentication provider for Login operation
+- Profiles, Conditional Bean creation
+- Cashing for performance @Casheable
+  - Spring Cashing with TTL configuration(Time-To-Live)
 
 ***Migrating from H2 DB to MySQL DB***
+
 - Set up MySQL DB
 
 ***Build and deployment to AWS cloud***

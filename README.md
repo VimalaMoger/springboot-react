@@ -1,4 +1,4 @@
-# E-store application
+# E-store
 
 **Initial set up**
 
@@ -8,6 +8,7 @@ Generated Spring Boot Web project using [Spring Initializer](https://start.sprin
 ```
 Spring boot starter web, Spring boot starter data jpa, Lombok, Spring boot Dev tools, Spring boot starter actuator, Spring boot starter validation, Spring boot starter security, Jjwt jackson, Jjwt impl, springdoc openapi starter webmvc ui, spring boot starter cashe, Caffeine, MySQL connector j
 ```
+Code Editor: Intellij
 
 ## Project Structure
 ```bash

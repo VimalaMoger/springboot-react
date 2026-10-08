@@ -145,7 +145,8 @@ Code Editor: Intellij
 - Set up MySQL DB
 
 ***Build and deployment to AWS cloud***
-
+<!--
 [App to view](https://lighthearted-stroopwafel-c66603.netlify.app/)
 
 ```test card 4242 4242 4242 4242```
+-->
